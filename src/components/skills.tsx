@@ -1,4 +1,4 @@
-import React from "react"
+
 import { motion } from "framer-motion"
 import type { Variants } from "framer-motion"
 import { ShimmerButton } from "../components/ui/shimmer-button"

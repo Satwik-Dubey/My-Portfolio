@@ -1,10 +1,11 @@
-import React from "react"
+import type React from "react"
 import { motion } from "framer-motion"
 import type { Variants } from "framer-motion"
-import { FaGithub, FaLinkedinIn, FaDiscord } from "react-icons/fa"
+import { FaGithub, FaLinkedinIn } from "react-icons/fa"
 import { SiGmail } from "react-icons/si"
 import { FaXTwitter } from "react-icons/fa6"
-import { Clipboard, File } from "lucide-react"
+import { File } from "lucide-react"
+
 const fadeUp: Variants = {
   hidden: { opacity: 0, y: 24 },
   visible: {

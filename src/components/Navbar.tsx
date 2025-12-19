@@ -1,10 +1,19 @@
 "use client";
-import React from "react";
+import { useEffect, useState } from "react";
 import { FloatingNav } from "../components/ui/floating-navbar";
 import { IconHome, IconMessage, IconUser } from "@tabler/icons-react";
 
 
 export function FloatingNavDemo() {
+  const [scrolled, setScrolled] = useState(false);
+
+  useEffect(() => {
+    const onScroll = () => setScrolled(window.scrollY > 40);
+    onScroll();
+    window.addEventListener("scroll", onScroll, { passive: true });
+    return () => window.removeEventListener("scroll", onScroll);
+  }, []);
+
   const navItems = [
     {
       name: "Home",
@@ -30,7 +39,7 @@ export function FloatingNavDemo() {
 
   return (
     <div className="relative w-full">
-      <FloatingNav navItems={navItems} />
+      <FloatingNav navItems={navItems} className={scrolled ? "nav--transparent" : "nav--solid"} />
     </div>
   );
 }

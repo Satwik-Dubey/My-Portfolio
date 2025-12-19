@@ -1,4 +1,4 @@
-import React from "react"
+
 import { motion } from "framer-motion"
 import type { Variants } from "framer-motion"
 import { ExternalLink } from "lucide-react"
@@ -79,14 +79,14 @@ const imageReveal: Variants = {
   },
 }
 
-const containerVariants: Variants = {
-  hidden: { opacity: 0, y: 80 },
-  visible: {
-    opacity: 1,
-    y: 0,
-    transition: { duration: 0.7, ease: "easeOut", staggerChildren: 0.15 },
-  },
-}
+// const containerVariants: Variants = {
+//   hidden: { opacity: 0, y: 80 },
+//   visible: {
+//     opacity: 1,
+//     y: 0,
+//     transition: { duration: 0.7, ease: "easeOut", staggerChildren: 0.15 },
+//   },
+// }
 
 const itemVariants: Variants = {
   hidden: { opacity: 0, y: 40 },

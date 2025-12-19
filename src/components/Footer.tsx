@@ -1,4 +1,4 @@
-import React from "react"
+
 import { Copyright } from "lucide-react"
 
 const CURRENT_YEAR = new Date().getFullYear()
@@ -11,10 +11,9 @@ export default function Footer() {
     >
       <div className="mx-auto max-w-6xl px-4 py-4 flex flex-col sm:flex-row items-center justify-between gap-4">
         <p className="flex items-center gap-2 text-sm md:text-base text-white/60">
-          <Copyright className="h-4 w-4 text-white/60" />{" "}
-          <span>Satwik Dubey.</span>
+          <Copyright className="h-4 w-4 text-white/70" />
+          <span>{CURRENT_YEAR} Satwik Dubey</span>
         </p>
-
       </div>
     </footer>
   )

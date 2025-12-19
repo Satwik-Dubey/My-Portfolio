@@ -1,7 +1,7 @@
 import React from "react"
 import { motion } from "framer-motion"
 import type { Variants } from "framer-motion"
-import { FaGithub, FaLinkedinIn, FaDiscord } from "react-icons/fa"
+import { FaGithub, FaLinkedinIn} from "react-icons/fa"
 import { FaXTwitter } from "react-icons/fa6"
 import { SiGmail } from "react-icons/si"
 
