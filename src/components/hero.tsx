@@ -108,7 +108,7 @@ export default function Hero() {
           >
             <div className="relative w-full max-w-[320px] md:max-w-[460px] aspect-square">
               <img
-                src="/pic.png"
+                src="/pic.jpg"
                 alt="Profile Illustration"
                 className="h-full w-full object-contain"
                 loading="eager"

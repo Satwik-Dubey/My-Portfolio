@@ -19,34 +19,34 @@ const projects: Project[] = [
     title: "VoteTheBeat — Let the crowd decide the music.",
     description:
       "VoteTheBeat is a real-time collaborative music voting platform where users create shared sessions, add songs, and vote live. Powered by WebSockets, it enables a fair and interactive way for groups to decide what plays next.",
-    image: "/votethebeat.png",
+    image: "/votethebeat.jpg",
     liveLink: "https://nextgigg.vercel.app/",
     githubLink: "https://github.com/Satwik-Dubey/VoteTheBeat",
   },
   {
     id: "02",
-    title: "Schedulo — Plan smarter. Stay consistent. Get more done.",
-    description:
-      "Schedulo simplifies daily planning by combining smart scheduling, reminders, and productivity analytics in one platform. It helps users stay organized, focused, and consistent with their goals.",
-    image: "/schedulo.png",
-    liveLink: "https://schedulo-pi.vercel.app/",
-    githubLink: "https://github.com/Satwik-Dubey/Schedulo",
-  },
-  {
-    id: "03",
     title: "NextGig — AI-powered tools to build careers, not just resumes.",
     description:
       "NextGig is an AI-powered career development platform that helps users build resumes, generate cover letters, assess skills, and explore industry insights. It focuses on personalization, automation, and real-world career readiness.",
-    image: "/nextgig.png",
+    image: "/nextgig.jpg",
     liveLink: "https://nextgigg.vercel.app/",
     githubLink: "https://github.com/Satwik-Dubey/nextgig",
+  },
+  {
+    id: "03",
+    title: "Schedulo — Plan smarter. Stay consistent. Get more done.",
+    description:
+      "Schedulo simplifies daily planning by combining smart scheduling, reminders, and productivity analytics in one platform. It helps users stay organized, focused, and consistent with their goals.",
+    image: "/schedulo.jpg",
+    liveLink: "https://schedulo-pi.vercel.app/",
+    githubLink: "https://github.com/Satwik-Dubey/Schedulo",
   },
   {
     id: "04",
     title: "Hostel Dekho — Find your next stay near campus.",
     description:
       "Hostel Dekho is a student-focused accommodation platform that enables users to discover, contact, and book hostels and PGs near their college. It provides a seamless end-to-end experience from search to booking.",
-    image: "/hosteldekho.png",
+    image: "/hosteldekho.jpg",
     liveLink: "https://drive.google.com/file/d/127QHASuEZUnMFISua5LYyQj5jONyRrOd/view?usp=sharing",
     githubLink: "https://github.com/Satwik-Dubey/hosteldekho/tree/main",
   },
@@ -55,7 +55,7 @@ const projects: Project[] = [
     title: "Voice Bridge — Instant translation across text, voice, and vision.",
     description:
       "Voice Bridge is a real-time multilingual translation platform built with Groq AI, supporting text, audio, and image-based translation. It is designed for instant communication without app switching or installation.",
-    image: "/VoiceBridge.png",
+    image: "/VoiceBridge.jpg",
     liveLink: "https://youtu.be/W5h3b5eoeSU?si=-QVBgrqkH5myAMwI",
     githubLink: "https://github.com/Satwik-Dubey/MultilingualCommunicator",
   },
@@ -64,7 +64,7 @@ const projects: Project[] = [
     title: "SmartSnip — Read less. Understand more.",
     description:
       "SmartSnip is a lightweight Chrome extension that uses AI to generate context-aware summaries of web pages. It supports multiple summary formats with a privacy-first, minimal UI approach.",
-    image: "/smartsnip.png",
+    image: "/smartsnip.jpg",
     liveLink: "https://github.com/Satwik-Dubey/SmartSnip",
     githubLink: "https://github.com/Satwik-Dubey/SmartSnip",
   },
