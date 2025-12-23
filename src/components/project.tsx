@@ -128,7 +128,12 @@ export default function ProjectsSection() {
                 variants={imageReveal}
                 className="relative w-full max-w-[520px] aspect-[18/10] rounded-2xl overflow-hidden cursor-pointer group"
               >
-  
+                <img
+                  src={project.image}
+                  alt={project.title}
+                  className="object-cover w-full h-full transition-transform duration-300 group-hover:scale-105"
+                  loading="lazy"
+                />
               </motion.a>
 
               <div className={`flex flex-col ${index % 2 !== 0 ? "md:order-1" : "md:order-2"}`}>
@@ -143,7 +148,7 @@ export default function ProjectsSection() {
                       className="inline-block align-middle ml-2"
                       aria-label="Demo"
                     >
-                      <img src="{youtube.png}"/>
+                      
                     </a>
                   )}
                 </h3>
