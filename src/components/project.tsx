@@ -1,4 +1,3 @@
-
 import { motion } from "framer-motion"
 import type { Variants } from "framer-motion"
 import { ExternalLink } from "lucide-react"
@@ -11,6 +10,7 @@ type Project = {
   image: string
   liveLink: string
   githubLink?: string
+  demoLink?: string 
 }
 
 const projects: Project[] = [
@@ -20,8 +20,9 @@ const projects: Project[] = [
     description:
       "VoteTheBeat is a real-time collaborative music voting platform where users create shared sessions, add songs, and vote live. Powered by WebSockets, it enables a fair and interactive way for groups to decide what plays next.",
     image: "/votethebeat.jpg",
-    liveLink: "https://nextgigg.vercel.app/",
+    liveLink: "https://vote-the-beat-app.vercel.app/",
     githubLink: "https://github.com/Satwik-Dubey/VoteTheBeat",
+    demoLink: "https://youtu.be/nXKknfs2YVc",
   },
   {
     id: "02",
@@ -127,17 +128,25 @@ export default function ProjectsSection() {
                 variants={imageReveal}
                 className="relative w-full max-w-[520px] aspect-[18/10] rounded-2xl overflow-hidden cursor-pointer group"
               >
-                <img
-                  src={project.image}
-                  alt={project.title}
-                  className="absolute inset-0 h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
-                  loading="lazy"
-                />
+  
               </motion.a>
 
               <div className={`flex flex-col ${index % 2 !== 0 ? "md:order-1" : "md:order-2"}`}>
                 <span className="mb-4 text-4xl font-bold text-white/70">{project.id}</span>
-                <h3 className="mb-4 text-2xl md:text-3xl font-semibold">{project.title}</h3>
+                <h3 className="mb-4 text-2xl md:text-3xl font-semibold flex items-center gap-2">
+                  {project.title}
+                  {project.demoLink && (
+                    <a
+                      href={project.demoLink}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-block align-middle ml-2"
+                      aria-label="Demo"
+                    >
+                      <img src="{youtube.png}"/>
+                    </a>
+                  )}
+                </h3>
                 <p className="mb-6 max-w-md text-sm md:text-base text-white/60 leading-relaxed">
                   {project.description}
                 </p>
@@ -162,6 +171,17 @@ export default function ProjectsSection() {
                     >
                       GitHub
                       <FaGithub size={16} />
+                    </a>
+                  ) : null}
+
+                  {project.demoLink ? (
+                    <a
+                      href={project.demoLink}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center gap-2 text-m font-medium text-neutral-400 hover:text-white transition"
+                    >
+                      Demo
                     </a>
                   ) : null}
                 </div>
