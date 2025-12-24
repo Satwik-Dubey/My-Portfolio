@@ -97,7 +97,7 @@ export default function Hero() {
                 />
               </motion.div>
               <motion.div variants={fadeUp}>
-                <SocialIcon href="https://drive.google.com/file/d/1Yi8N7OR2H0sbSsMAH9bgv_yd0FxPeojb/view?usp=sharing" icon={<File size={18} />} />
+                <SocialIcon href="https://drive.google.com/file/d/1Qj_9pBMPQRs198vVPL0uzmIZWX4Ic9iO/view?usp=sharing" icon={<File size={18} />} />
               </motion.div>
             </motion.div>
           </div>
