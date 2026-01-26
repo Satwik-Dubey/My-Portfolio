@@ -42,7 +42,7 @@ export default function Contact() {
         <motion.div variants={stagger} className="flex flex-wrap justify-center gap-5">
           <SocialIcon icon={<FaGithub size={20} />} href="https://github.com/Satwik-Dubey" />
           <SocialIcon icon={<SiGmail size={18} />} href="mailto:dubeysatwik0@gmail.com" />
-          <SocialIcon icon={<FaXTwitter size={20} />} href="https://x.com/_satwikdubey" />
+          <SocialIcon icon={<FaXTwitter size={20} />} href="https://x.com/its_satwik" />
           <SocialIcon
             icon={<FaLinkedinIn size={20} />}
             href="https://www.linkedin.com/in/satwikdubey10/"
