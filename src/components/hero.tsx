@@ -80,7 +80,7 @@ export default function Hero() {
 
             <motion.div variants={stagger} className="flex flex-wrap gap-3">
                 <motion.div variants={fadeUp}>
-                 <SocialIcon href="https://x.com/_satwikdubey" icon={<FaXTwitter size={18} />} />
+                 <SocialIcon href="https://x.com/its_satwik" icon={<FaXTwitter size={18} />} />
                 </motion.div>
               <motion.div variants={fadeUp}>
                 <SocialIcon href="https://github.com/Satwik-Dubey" icon={<FaGithub size={18} />} />
